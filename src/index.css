@@ -2,17 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-.social-icon {
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 9999px;
-    border-width: 1px;
+
+html {
+  font-family: 'Sansita', sans-serif !important;
 }
 
 body {
-    min-height: max(884px, 100dvh);
+  cursor: none;
+}
+
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    #0a0000,
+    #1a0a00,
+    #331400,
+    #662200,
+    #994000,
+    #331400,
+    #1a0a00,
+    #0a0000
+  );
 }

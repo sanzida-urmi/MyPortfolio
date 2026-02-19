@@ -1,6 +1,5 @@
-import daisyui from 'daisyui';
+import daisyui from 'daisyui'
 
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
@@ -8,21 +7,19 @@ export default {
   ],
   darkMode: "class",
   theme: {
+    fontFamily: {
+      sans: ["Sansita", "sans-serif"],   // <-- এখানে extend না
+    },
     extend: {
       colors: {
         primary: "#C778DD",
         "background-light": "#F5F5F5",
         "background-dark": "#120B13",
       },
-      fontFamily: {
-        display: ["Poppins", "sans-serif"],
-      },
       borderRadius: {
         DEFAULT: "0.5rem",
       },
     },
   },
-  plugins: [
-    daisyui,
-  ],
+  plugins: [daisyui],
 }
